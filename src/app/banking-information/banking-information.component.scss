@@ -1,0 +1,150 @@
+// table, #bankinfo {
+//     width: 100% !important;
+//     table-layout: auto;
+//   }
+  
+  
+//   th{
+//     background: #007749 !important; 
+//     color: white;
+//     }
+  
+    // tr {
+    //   background: #efefef;
+    // }
+  
+  //   mat-progress-spinner {
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 50%;
+  //     transform: translate(-50%, -50%);
+  //     z-index: 5;
+  // }
+  
+//    .add-new {
+//     display: block;
+//     padding: 16px 20px;
+//     font-size: 13px;
+//     font-weight: 600;
+//     text-align: center;
+//     text-transform: uppercase;
+//     color: #000000;
+//     background-color: #dfdede;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease-in-out;
+//     float: right;
+// }
+  
+    // &:hover {
+    //  background-color: #509E2F;
+    //   color: #ffffff;
+    //   transition: 0.85s;
+    // }
+  
+//     &:focus {
+//       outline: none;
+//     }
+  
+    // &:disabled {
+    //   opacity: 0.5;
+    //   cursor: not-allowed;
+    // }
+  
+  
+  // .header {
+  //   padding-top: 10px;
+  //   text-align: left;
+  //   font-size: 30px;
+  // }
+  
+  // .notes {
+  //   margin-top: 10px;
+  //   font-style: italic;
+  //   color: gray;
+  // }
+  
+  // .container{
+  //   padding-right:0px ;
+  //   padding-left:0px ;
+  // }
+  
+  // .nodata{
+  //   text-align: center !important;
+  //  font-style: italic;
+  // }
+
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+.table-container {
+    width: 80%;
+    margin: auto; 
+  }
+
+  h1{
+    margin-right: 770px;
+    margin-top: 20px;
+    // padding-top: 20px;
+    font-family: 'Alegreya', serif;
+
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    width: 80%;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// .header {
+//   font-size: x-large;
+//  // margin-bottom: 13px;
+// }
+
+.add-new {
+  padding: 10px;
+ //background-color:white;
+//   color: white;
+  border: none;
+  //border-radius: 1px;
+  cursor: pointer;
+  margin-right: 160px;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.add-new:hover{
+  border-bottom: 2px solid black;
+  border-left:2px solid black ;
+  border-right:2px solid black ;
+  border-top: 2px solid black;
+  background-color: #708090;
+  color: white;
+  transition: all 0.6s;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: 'Alegreya', serif;
+}
+
+.custom-header{
+  font-size: 15px;
+}
+
+  

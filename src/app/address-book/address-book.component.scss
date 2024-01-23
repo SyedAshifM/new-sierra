@@ -1,0 +1,58 @@
+
+form {
+  max-width: 400px;
+  margin:  auto;
+  margin-top: 20px;
+}
+
+.form-section {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons {
+  //margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  //margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.form-group .zip {
+  margin-left: 10px;
+}
+
+button {
+  margin-right:10px ;
+  flex: 1;
+}
+
+.btn:hover{
+  background-color: #7B7D7D;
+}
+
+
+.transparent-toolbar {
+  background-color: transparent !important;
+  z-index: 1; 
+}
+
+.colored-toolbar {
+  background-color:#5D6D7E  !important; 
+  z-index: 0; 
+}

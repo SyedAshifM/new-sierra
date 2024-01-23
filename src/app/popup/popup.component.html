@@ -1,0 +1,7 @@
+<mat-form-field class="select-input-field">
+  <mat-select [(value)]="selected" placeholder="MyAccount" (selectionChange)="onSelectionChange()">
+    <mat-option [value]="">None</mat-option>
+    <mat-option *ngFor="let inspectionType of inspectionTypes"
+      [value]="inspectionType.inspection_type_id">{{inspectionType.description}}</mat-option>
+  </mat-select>
+</mat-form-field>

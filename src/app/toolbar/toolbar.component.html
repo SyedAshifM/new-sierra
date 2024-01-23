@@ -1,0 +1,96 @@
+<!-- <mat-drawer-container class="drawer-container">
+  <mat-drawer mode="side" [opened]="isMenuToggled">
+    
+    <div class="drawer-content">
+
+      
+      <a class="btn btn-border-1"  (click)="navigateToHome()">
+        <mat-icon>home</mat-icon> HOME
+      </a>
+      <a class="drawer-link" (click)="navigateToOwnershipDetails()">
+        <mat-icon>info</mat-icon> OWNERSHIP DETAILS
+      </a>
+      <a class="drawer-link" (click)="navigateToPaymentHistory()">
+        <mat-icon>payment</mat-icon> PAYMENT HISTORY
+      </a>
+      <a class="drawer-link" (click)="navigateToPortalTickets()">
+        <mat-icon>assignment</mat-icon> PORTAL TICKETS
+      </a>
+    </div>
+  </mat-drawer>
+
+ 
+  <mat-toolbar color="primary">
+    <button (click)="toggleMenu()" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <img src="assets/sierra-l.png" alt="" style="display: flex;" class="logo">
+    <span class="spacer"></span>
+      <button mat-button routerLink="/login" *ngIf="showLoginButton" class="btn"  type="mat-button" >login</button>
+  
+  </mat-toolbar> 
+
+  
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container> -->
+
+
+
+<!-- <mat-sidenav-container #sidenavContainer>
+
+  <mat-sidenav #sidenav mode="over">
+    <label>My Application</label>
+    <hr />
+    <nav>
+      <a class="drawer-link" (click)="navigateToHome()">
+        <mat-icon>home</mat-icon> HOME
+      </a>
+      <a class="drawer-link" (click)="navigateToOwnershipDetails()">
+        <mat-icon>info</mat-icon> OWNERSHIP DETAILS
+      </a>
+      <a class="drawer-link" (click)="navigateToPaymentHistory()">
+        <mat-icon>payment</mat-icon> PAYMENT HISTORY
+      </a>
+      <a class="drawer-link" (click)="navigateToPortalTickets()">
+        <mat-icon>ticket</mat-icon> PORTAL TICKETS
+      </a>
+    </nav>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <header>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        <img src="assets/sierra-l.png" alt="" class="logo">
+        <span class="spacer"></span>
+       
+          <button mat-button routerLink="/login" class="signup" type="mat-button" *ngIf="showLoginButton">login</button>
+  
+      </header>
+    </mat-toolbar>
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<!-- [ngClass]="{'transparent-toolbar': isTransparent, 'colored-toolbar': !isTransparent}" -->
+
+
+<mat-toolbar >
+  <img src="\assets\sierra-l.png" alt="" class="logo cover-image">
+  <nav>
+    <a  class="btn btn-border-1" (click)="navigateToHome()">HOME</a>
+    <a class="btn btn-border-1"  (click)="navigateToOwnershipDetails()"> OWNERSHIP DETAILS</a>
+    <a class="btn btn-border-1"  (click)="navigateToPaymentHistory()"> PAYMENT HISTORY </a>
+    <a class="btn btn-border-1"  (click)="navigateToPortalTickets()"> PORTAL TICKET </a>
+  </nav>
+</mat-toolbar>
+
+<!-- <a class="btn btn-border-1" href="">I'm a button</a> -->
+
+  <!-- <div style="border-right: 1px solid #000; height: 56px;"></div>
+  <button mat-button routerLink="/login" *ngIf="showLoginButton" class="btn rounded-button"  type="mat-button" >Login</button> -->
+

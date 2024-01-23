@@ -1,0 +1,154 @@
+<mat-toolbar class="transparent-toolbar">
+  
+</mat-toolbar>
+
+<div class="container">
+  <br />
+<h1 class="header" style="font-size: x-large; margin-bottom: 13px">
+  Banking Information
+</h1>
+<a>
+  <button class="add-new">Create New</button>
+</a>
+</div>
+<hr />
+<div class="table-container">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef class="custom-header" style="background-color:#7B7D7D ;">ACCOUNT HOLDER
+      </th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef class="custom-header" style="background-color:#7B7D7D ;">ACCOUNT NUMBER
+      </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="weight">
+      <th mat-header-cell *matHeaderCellDef class="custom-header" style="background-color:#7B7D7D ;">ROUTING NUMBER
+      </th>
+      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef style="background-color:#7B7D7D ;">COUNTRY</th>
+      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="accountType">
+      <th mat-header-cell *matHeaderCellDef style="background-color:#7B7D7D ;">ACCOUNT TYPE</th>
+      <td mat-cell *matCellDef="let element"> {{element.accountType}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator [length]="dataSource.data.length" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+    aria-label="Select page">
+  </mat-paginator>
+</div>
+
+
+
+
+
+<!-- <div class="container col-sm-8" id="bankinfo">
+    <div class="row">
+      <div class="col-sm-10">
+        <br />
+        <h2  >
+          Banking Information
+        </h2>
+      </div>
+      <div> -->
+<!-- <div class="col-sm-2" class="btn">
+          <a (click)="openAddBankingInfoModal()">
+            <button [disabled]="isAsmLoggedIn" class="add-new">Create New</button>
+          </a>
+        </div> -->
+<!-- </div>
+    </div> -->
+<!-- <hr /> -->
+<!-- <div class="container">
+      <div class="my-3">
+        <div class="mat-elevation-z8" style="overflow: auto">
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="position">
+              <th mat-header-cell *matHeaderCellDef>ACCOUNT HOLDER</th>
+              <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container> -->
+
+
+<!-- <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>ACCOUNT NUMBER</th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef>ROUTING NUMBER</th>
+            <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+          </ng-container>
+  
+  
+          <ng-container matColumnDef="symbol">
+            <th mat-header-cell *matHeaderCellDef>COUNTRY</th>
+            <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+          </ng-container>
+   -->
+<!-- <ng-container matColumnDef="AccountType">
+              <th mat-header-cell *matHeaderCellDef>ACCOUNT TYPE</th> -->
+<!-- <td mat-cell *matCellDef="let element">
+                {{ getAccountTypeLabel(element.bankAccountType) }}
+              </td> -->
+<!-- </ng-container>
+  
+  
+            <ng-container matColumnDef="noData">
+              <td mat-footer-cell class="nodata" *matFooterCellDef [attr.colspan]="displayedColumns.length">
+                No records found.
+              </td>
+            </ng-container> -->
+
+<!-- <tr mat-footer-row *matFooterRowDef="['noData']" [hidden]="dataSource && dataSource.data.length > 0"></tr> -->
+
+<!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+          
+        </div> -->
+<!-- <div class="notes">
+          <p>
+            Submission of Banking Information is authorization of Electronic Funds
+            Transfer or Direct Deposit. First time users, please allow 4-8 weeks
+            for automated payment to begin; you will continue to receive physical
+            checks via US Mail in the interim. Bank file rejection may result in
+            return to physical checks.
+          </p>
+        </div>
+      </div>
+    </div> -->
+<!-- <mat-progress-spinner [mode]="'indeterminate'" *ngIf="loading$ | async"></mat-progress-spinner> -->
+<!--Loader Spinner-->
+<!-- <ng-container *ngIf="loading$ | async">
+      <div class="overlay">
+        <div class="spinner-css"></div>
+        <div class="spinner-text">Please wait while we retrieve the data.</div>
+      </div>
+    </ng-container> -->
+
+<!-- New  spinner  -->
+<!-- <ng-container *ngIf="SaveSpinner$ | async">
+      <div class="overlay">
+        <div class="spinner-css"></div>
+        <div class="spinner-text">Please wait while we save the data.</div>
+      </div>
+    </ng-container> -->
+<!-- </div> -->

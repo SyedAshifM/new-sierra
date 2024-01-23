@@ -1,0 +1,222 @@
+//  app-popup{
+//     margin-left: 75%;  
+//  }
+
+
+//   .drawer-container {
+//     height: 100%;
+//   }
+
+
+// .drawer-content {
+//   padding: 20px;
+//   cursor: pointer;
+// }
+
+
+//   .drawer-link {
+//     display: flex; 
+//     align-items: center;
+//     text-decoration: none; 
+//     padding: 10px 0;
+//     color: black;
+//     margin-bottom: 12px;
+//   }
+
+//   .drawer-link:hover {
+//     cursor: pointer;
+//     background-color: #eee;
+//   }
+
+//   .drawer-link mat-icon {
+//     margin-right: 8px;
+//     color: #1A8196; 
+//   }
+
+
+// router-outlet {
+// flex-grow: 1;
+// overflow-y: auto; 
+// //padding: 20px; 
+// }
+
+
+
+// mat-toolbar {
+//   //background-color: #000;
+//   //background-color:#E59866;
+//   background-color: #B3B6B7 ;
+// }
+
+// .btn {
+//   margin-left: 1100px;
+// }
+
+// .logo {
+//   width: 200px;
+//   margin-left: 16px;
+//   //margin-top: 10px;
+// }
+
+
+
+
+
+
+
+mat-toolbar {
+  padding: 0 16px;
+  // background-color:#E59866;
+  //background-color: #5D6D7E;
+  //background-color: #B3B6B7 ;
+  position: fixed;
+  z-index: 1;
+  text-shadow: 1px 2.1px black;
+  font-size: 16px;
+  //padding-top: 24PX;
+  background: transparent;
+}
+
+// .transparent-toolbar {
+//   background-color: transparent !important;
+//   z-index: 1; 
+// }
+
+// .colored-toolbar {
+//   // background-color:#5D6D7E  !important; 
+//  // background-color: transparent !important;
+//   z-index: 1;
+
+// }
+
+
+
+// .cover-image {
+//   // z-index: 2; 
+//   position: absolute;
+// }
+
+
+.logo {
+  width: 300px;
+  // margin-right: 16px;
+}
+
+
+nav {
+  margin-left: 700px;
+  position: fixed;
+}
+
+.drawer-link {
+  color: white;
+  text-decoration: none;
+  padding: 0 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+// .drawer-link:hover{
+//   border-bottom: 2px solid black;
+// }
+
+.rounded-button {
+  border-radius: 30px;
+  text-decoration: none;
+  margin-left: auto;
+  cursor: pointer;
+  font-size: large;
+  margin-right: 30px;
+}
+
+.rounded-button:hover {
+  border: 2px solid black;
+}
+
+// * {
+//   font-family: 'Alegreya', serif;
+// }
+
+
+
+
+//new button
+.btn {
+
+  border-radius: 20px;
+  // background-color: lime;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 5px 7px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #999999;
+  cursor: pointer;
+  -moz-transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+  color: white;
+  font-weight: 600;
+}
+
+.btn.btn-border-1::after,
+.btn.btn-border-1::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  visibility: hidden;
+}
+
+.btn.btn-border-1::after {
+
+  bottom: -3px;
+  right: -3px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+}
+
+.btn.btn-border-1::before {
+
+  top: -3px;
+  left: -3px;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+}
+
+.btn.btn-border-1:hover {
+
+  animation: pulse 1s ease-out .4s;
+  //color: #222222;
+}
+
+.btn.btn-border-1:hover::after,
+.btn.btn-border-1:hover::before {
+  border-radius: 200px;
+  width: calc(100%);
+  height: calc(100%);
+  visibility: visible;
+  transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::after {
+
+  transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::before {
+  transition: width .1s ease, height .1s ease .1s;
+}
+
+.profile img {
+  width: 50px;
+  /* Set your desired width */
+  height: 50px;
+  /* Set your desired height */
+  border-radius: 50%;
+  /* Make the image circular */
+}
